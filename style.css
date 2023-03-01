@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+nav {
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+nav h1 {
+  font-size: 2em;
+  font-weight: 1000;
+}
+
+nav h1,
+li {
+  color: white;
+}
+
+nav,
+footer {
+  background-color: #f76c6c;
+}
+
+ul {
+  display: flex;
+  margin-top: 0.5em;
+}
+
+li {
+  margin-right: 1.5em;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 250px;
+  color: white;
+  background-image: url(./images/bike.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  margin-top: 1em;
+  font-size: 56px;
+}
+
+body {
+  height: 100vh;
+  line-height: 1.5;
+  font-family: Verdana, sans-serif;
+  background-color: lightgrey;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+
+section {
+  margin: 2em 0;
+}
+
+.text-width {
+  max-width: 65ch;
+}
+
+h2 + * {
+  margin: 1em 0;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 47%;
+  background-color: white;
+  margin-bottom: 1em;
+  margin-right: 1.5%;
+  padding: 1.5em;
+  border-radius: 7px;
+  box-shadow: -5px 5px 10px rgba(128, 128, 128, 0.5);
+}
+
+footer {
+  padding: 1em;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  font-weight: 800;
+}
