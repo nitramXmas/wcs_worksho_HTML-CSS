@@ -51,14 +51,24 @@ header {
   align-items: center;
   min-height: 250px;
   color: white;
-  background-image: url(./images/bike.jpg);
+  /* position: relative; */
+  /*background-image: url(./images/bike.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 header h1 {
-  font-size: clamp(10px, 10vw, 90px);
+  font-size: clamp(10px, 5vw, 90px);
+  z-index: 2;
+  position: absolute;
+}
+
+img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
 }
 
 body {
@@ -130,10 +140,5 @@ footer {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-  }
-
-  * {
-    --main-color: #f76c6c;
-    --back-color: lightgrey;
   }
 }
