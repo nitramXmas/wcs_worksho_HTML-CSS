@@ -1,8 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   box-sizing: border-box;
   list-style: none;
+}
+
+:root {
+  --COLOR1: red;
+  --COLOR1: green;
+  --COLOR1: blue;
+  --FONT: 12px;
 }
 
 nav {
@@ -44,7 +52,7 @@ header {
   color: white;
   background-image: url(./images/bike.jpg);
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -71,9 +79,9 @@ section {
   margin: 2em 0;
 }
 
-.text-width {
+/* .text-width {
   max-width: 65ch;
-}
+} */
 
 h2 + * {
   margin: 1em 0;
@@ -102,4 +110,10 @@ footer {
   position: fixed;
   width: 100%;
   font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  footer {
+    background-color: black;
+  }
 }
